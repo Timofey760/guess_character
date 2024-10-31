@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="loadQuestion()">
+    <div class="container">
+        <h1>Following Game</h1>
+        <div class="character-image">
+            <img id="characterImage" src="" alt="Character Image">
+        </div>
+        <div class="question">
+            <p id="questionText">Who is this character?</p>
+            <div class="options">
+                <button class="option" onclick="checkAnswer(this)">Option 1</button>
+                <button class="option" onclick="checkAnswer(this)">Option 2</button>
+                <button class="option" onclick="checkAnswer(this)">Option 3</button>
+                <button class="option" onclick="checkAnswer(this)">Option 4</button>
+            </div>
+        </div>
+        <div class="score">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <button id="nextQuestionBtn" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
